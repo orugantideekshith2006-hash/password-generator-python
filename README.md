@@ -1,0 +1,10 @@
+# 🔐 Password Generator (Python)
+
+A simple Python script to generate strong random passwords using:
+- Letters (A–Z, a–z)
+- Numbers (0–9)
+- Special characters
+
+## 🚀 Run the Program
+```bash
+py password_generator.py

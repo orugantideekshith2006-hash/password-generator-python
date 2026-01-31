@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class Timetable</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+h1 {
+    color: #003399;
+}
+
+h2 {
+    color: green;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.info td {
+    text-align: left;
+}
+
+.lunch {
+    background-color: #ffeb3b;
+    font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Geethanjali College of Engineering & Technology</h1>
+    <h2>Department of Computer Science & Engineering</h2>
+    <h3>Even Semester</h3>
+
+    <table class="info">
+        <tr>
+            <td><b>Year & Sem:</b> II B.Tech II-Sem</td>
+            <td><b>Section:</b> H</td>
+            <td><b>Academic Year:</b> 2025-26</td>
+            <td><b>Room No:</b> 325</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>09:00-09:55</th>
+            <th>09:55-10:50</th>
+            <th>10:50-11:45</th>
+            <th>11:45-12:40</th>
+            <th class="lunch">LUNCH</th>
+            <th>01:30-02:25</th>
+            <th>02:25-03:20</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>DAA</td>
+            <td>TOC</td>
+            <td colspan="2">WT LAB / DAA LAB</td>
+            <td class="lunch" rowspan="6">L<br>U<br>N<br>C<br>H</td>
+            <td>CAALP</td>
+            <td>Mentoring</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>DAA</td>
+            <td>WT</td>
+            <td colspan="2">Design Thinking</td>
+            <td>OS</td>
+            <td>Sports / LIB</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>Design Thinking</td>
+            <td>OS</td>
+            <td>TOC</td>
+            <td>---</td>
+            <td>ECD</td>
+            <td>---</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td>OS</td>
+            <td>WT</td>
+            <td>TOC</td>
+            <td>CAALP</td>
+            <td colspan="2">DAA LAB / OS LAB</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>TOC</td>
+            <td>DAA</td>
+            <td>WT</td>
+            <td>CAALP</td>
+            <td colspan="2">OS LAB / WT LAB</td>
+        </tr>
+
+        <tr>
+            <td>Saturday</td>
+            <td colspan="4">TRAINING</td>
+            <td colspan="2">TRAINING</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
