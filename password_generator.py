@@ -40,3 +40,9 @@ else:
 
     print("Generated Strong Password:", ''.join(password))
     print("Strength:", check_strength(''.join(password)))
+save = input("Do you want to save password to file? (y/n): ")
+
+if save.lower() == 'y':
+    with open("saved_passwords.txt", "a") as file:
+        file.write(''.join(password) + "\n")
+    print("Password saved successfully.")
