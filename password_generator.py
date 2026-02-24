@@ -1,6 +1,25 @@
 import random
 import string
+def check_strength(password):
+    strength = 0
+    
+    if any(c.islower() for c in password):
+        strength += 1
+    if any(c.isupper() for c in password):
+        strength += 1
+    if any(c.isdigit() for c in password):
+        strength += 1
+    if any(c in "!@#$%^&*()_+-=[]{}|;:',.<>?/`~" for c in password):
+        strength += 1
 
+    if strength == 4:
+        return "Very Strong"
+    elif strength == 3:
+        return "Strong"
+    elif strength == 2:
+        return "Medium"
+    else:
+        return "Weak"
 length = int(input("Enter password length: "))
 
 if length < 4:
@@ -20,3 +39,4 @@ else:
     random.shuffle(password)
 
     print("Generated Strong Password:", ''.join(password))
+    print("Strength:", check_strength(''.join(password)))
